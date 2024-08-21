@@ -1,9 +1,9 @@
-// import type { HttpContext } from '@adonisjs/core/http'
+import type { HttpContext } from '@adonisjs/core/http'
 
 export default class AuthController {
 
-    public async register() {
-        return this.register.name
+    public async register({request} : HttpContext ) {
+        return request.all()
     }
 
     public async login() {
