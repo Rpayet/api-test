@@ -1,6 +1,12 @@
-import vine from '@vinejs/vine'
+import vine, { SimpleMessagesProvider } from '@vinejs/vine'
 
 const password = vine.string().minLength(8).maxLength(30)
+const messages = {
+    confirmed: 'The password fields does not match',
+    regex: 'The password must contain at least one lowercase letter, one uppercase letter, one number, and one special character',
+}
+
+vine.messagesProvider = new SimpleMessagesProvider(messages)
 
 export const registerUser = vine.compile(
     vine.object({
