@@ -1,0 +1,9 @@
+{
+    "minLength": "The :attribute must be at least :min characters.",
+    "maxLength": "The :attribute may not be greater than :max characters.",
+    "unique": "The :attribute has already been taken.",
+    "required": "The :attribute field is required.",
+    "confirmed": "The password confirmation does not match.",
+    "regex": "The password must contain at least one lowercase letter, one uppercase letter, one number, and one special character",
+    "email": "The :attribute must be a valid email address."
+}
