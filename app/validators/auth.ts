@@ -1,7 +1,5 @@
 import vine, { SimpleMessagesProvider } from '@vinejs/vine'
-import i18nManager from '@adonisjs/i18n/services/main'
 
-const i18n = i18nManager.locale('fr')
 const password = vine.string().minLength(8).maxLength(30)
 const messages = {
     confirmed: 'The password fields does not match',
